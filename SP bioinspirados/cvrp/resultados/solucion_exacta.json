@@ -1,0 +1,72 @@
+{
+  "rutas": [
+    {
+      "ruta": 1,
+      "secuencia": [
+        0,
+        2,
+        1,
+        5,
+        0
+      ],
+      "carga": 44,
+      "distancia": 101.18784351429869,
+      "desperdicio_pct": 12.0
+    },
+    {
+      "ruta": 2,
+      "secuencia": [
+        0,
+        8,
+        7,
+        6,
+        0
+      ],
+      "carga": 47,
+      "distancia": 109.25632678936441,
+      "desperdicio_pct": 6.0
+    },
+    {
+      "ruta": 3,
+      "secuencia": [
+        0,
+        9,
+        0
+      ],
+      "carga": 13,
+      "distancia": 22.360679774997898,
+      "desperdicio_pct": 74.0
+    },
+    {
+      "ruta": 4,
+      "secuencia": [
+        0,
+        10,
+        4,
+        3,
+        0
+      ],
+      "carga": 42,
+      "distancia": 86.18463666916907,
+      "desperdicio_pct": 16.0
+    }
+  ],
+  "distancia_total": 318.9894867478301,
+  "numero_rutas": 4,
+  "demanda_total": 146,
+  "capacidad": 50,
+  "vehiculos_minimos": 3,
+  "modelo": {
+    "estatus": "Optimal",
+    "z": 318.98948674783003,
+    "cota_inferior": 318.98948674783003,
+    "relajacion_lineal": 266.569,
+    "numero_variables": 120,
+    "variables_binarias": 110,
+    "variables_continuas": 10,
+    "numero_restricciones": 112,
+    "nodos_explorados": 3806,
+    "tiempo": 1.6145945000462234,
+    "solver": "CBC (PuLP 4.0.0)"
+  }
+}

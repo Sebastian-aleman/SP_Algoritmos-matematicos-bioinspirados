@@ -1,0 +1,59 @@
+{
+  "rutas": [
+    {
+      "ruta": 1,
+      "secuencia": [
+        0,
+        2,
+        1,
+        5,
+        0
+      ],
+      "carga": 44,
+      "distancia": 101.18784351429869,
+      "desperdicio_pct": 12.0
+    },
+    {
+      "ruta": 2,
+      "secuencia": [
+        0,
+        8,
+        4,
+        3,
+        9,
+        0
+      ],
+      "carga": 49,
+      "distancia": 119.82343354907738,
+      "desperdicio_pct": 2.0
+    },
+    {
+      "ruta": 3,
+      "secuencia": [
+        0,
+        6,
+        7,
+        0
+      ],
+      "carga": 36,
+      "distancia": 77.01053681718832,
+      "desperdicio_pct": 28.000000000000004
+    },
+    {
+      "ruta": 4,
+      "secuencia": [
+        0,
+        10,
+        0
+      ],
+      "carga": 17,
+      "distancia": 41.23105625617661,
+      "desperdicio_pct": 66.0
+    }
+  ],
+  "distancia_total": 339.252870136741,
+  "numero_rutas": 4,
+  "demanda_total": 146,
+  "capacidad": 50,
+  "vehiculos_minimos": 3
+}
