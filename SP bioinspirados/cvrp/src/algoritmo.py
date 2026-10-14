@@ -30,3 +30,10 @@ def medir_tiempo(funcion, instancia, repeticiones=100):
         funcion(instancia)
         tiempos.append(time.perf_counter() - inicio)
     return statistics.median(tiempos)
+
+def medir_tiempo_exacto(matriz, demandas, capacidad, repeticiones=5):
+    """Mediana del tiempo de solve del modelo exacto en `repeticiones` corridas."""
+    from src.modelo_exacto import resolver_modelo_exacto
+    tiempos = [resolver_modelo_exacto(matriz, demandas, capacidad)[1]["tiempo"]
+               for _ in range(repeticiones)]
+    return statistics.median(tiempos)

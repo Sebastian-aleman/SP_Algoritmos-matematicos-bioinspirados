@@ -38,7 +38,8 @@ def construir_modelo(matriz, demandas, capacidad):
     for i in clientes:
         for j in clientes:
             if i != j:
-                modelo += (u[j] >= u[i] + demandas[j] - capacidad * (1 - x[i, j]),
+                modelo += (u[j] >= u[i] + demandas[j] - capacidad * (1 - x[i, j])
+                           + (capacidad - demandas[i] - demandas[j]) * x[j, i],
                            f"carga_{i}_{j}")
 
     return modelo, x, u
