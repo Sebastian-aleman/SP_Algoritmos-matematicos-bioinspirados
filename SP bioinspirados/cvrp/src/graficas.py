@@ -136,3 +136,22 @@ def graficar_rutas(instancia, solucion, ruta, titulo="Rutas"):
                frameon=False, fontsize=9)
     figura.savefig(ruta, bbox_inches="tight")
     plt.close(figura)
+
+def graficar_tsp(instancia, recorrido, z, ruta):
+    coordenadas, demandas = instancia["coordenadas"], instancia["demandas"]
+    figura, eje = _nuevo_eje(coordenadas)
+    secuencia = [0] + recorrido + [0]
+    for a, b in zip(secuencia, secuencia[1:]):
+        eje.annotate("", xy=coordenadas[b], xytext=coordenadas[a], zorder=2,
+                     arrowprops=dict(arrowstyle="-|>", color=COLORES_RUTAS[0], linewidth=2,
+                                     mutation_scale=16, shrinkA=6, shrinkB=6))
+    _dibujar_nodos(eje, coordenadas, demandas, [COLORES_RUTAS[0]] * len(coordenadas))
+    eje.set_title(f"TSP óptimo (longitud = {z:.2f})", color=COLOR_TEXTO)
+    eje.legend(handles=[
+        Line2D([], [], marker="s", linestyle="", color=COLOR_DEPOSITO, markersize=9,
+               label="Depósito (0)"),
+        Line2D([], [], color=COLORES_RUTAS[0], linewidth=2,
+               label="-".join(map(str, secuencia))),
+    ], loc="upper center", bbox_to_anchor=(0.5, -0.1), frameon=False, fontsize=9)
+    figura.savefig(ruta, bbox_inches="tight")
+    plt.close(figura)
