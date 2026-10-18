@@ -1,0 +1,15 @@
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Método & $Z$ mejor & $Z$ prom. & \% éxito & N.º rutas & Desperdicio global (\%) & Tiempo total (s) & Tiempo hasta el mejor (s) & GAP mejor (\%) & GAP prom. (\%) & Dif. tiempo (\%) \\
+\midrule
+Modelo exacto (PuLP/CBC) & 318.99 & 318.99 & 100.0 & 4 & 27.00 & 1.810545 & -- & 0.00 & 0.00 & 0.0000 \\
+Clarke-Wright & 339.25 & 339.25 & 0.0 & 4 & 27.00 & 0.000097 & -- & 6.35 & 6.35 & -99.9947 \\
+Clarke-Wright + búsqueda local & 339.25 & 339.25 & 0.0 & 4 & 27.00 & 0.000160 & -- & 6.35 & 6.35 & -99.9911 \\
+Algoritmo genético & 318.99 & 318.99 & 100.0 & 4 & 27.00 & 0.091511 & 0.009309 & 0.00 & 0.00 & -94.9457 \\
+Colonia de hormigas & 318.99 & 318.99 & 100.0 & 4 & 27.00 & 0.010796 & 0.000747 & 0.00 & 0.00 & -99.4037 \\
+\midrule
+\multicolumn{11}{l}{Tiempos: mediana de 5 solves (exacto), 100 ejecuciones (Clarke-Wright) y 30 semillas (GA y ACO, mejor solución de las 30). Éxito: $|Z - Z^*| < 10^{-4}$.} \\
+\bottomrule
+\end{tabular}%
+}

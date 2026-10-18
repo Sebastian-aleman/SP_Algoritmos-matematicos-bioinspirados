@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+Método & $Z$ & N.º rutas & Desperdicio global (\%) & Tiempo (s) & GAP costo (\%) & Dif. tiempo (\%) \\
+\midrule
+Modelo exacto (PuLP/CBC) & 318.99 & 4 & 27.00 & 1.810545 & 0.00 & 0.0000 \\
+Clarke-Wright & 339.25 & 4 & 27.00 & 0.000097 & 6.35 & -99.9947 \\
+Clarke-Wright + búsqueda local & 339.25 & 4 & 27.00 & 0.000160 & 6.35 & -99.9911 \\
+Algoritmo genético & 318.99 & 4 & 27.00 & 0.091511 & 0.00 & -94.9457 \\
+Colonia de hormigas & 318.99 & 4 & 27.00 & 0.010796 & 0.00 & -99.4037 \\
+\bottomrule
+\end{tabular}

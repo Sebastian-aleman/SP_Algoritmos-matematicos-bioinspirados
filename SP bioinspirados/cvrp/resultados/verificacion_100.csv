@@ -1,0 +1,3 @@
+algoritmo,semillas,exito_pct,z_promedio,z_maximo,mejor_promedio,mejor_maximo,evaluaciones_hasta_mejor_promedio,tiempo_mediana
+GA,100,100.0,318.98948674783003,318.9894867478301,8.25,39,399.69,0.09175795000192011
+ACO,100,100.0,318.9894867478301,318.9894867478301,2.49,8,18.74,0.011857400000735652
