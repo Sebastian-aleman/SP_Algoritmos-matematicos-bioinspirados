@@ -1,0 +1,12 @@
+{
+  "GA": {
+    "puntos_cruce": 1,
+    "prob_mutacion": 0.2,
+    "seleccion": "torneo"
+  },
+  "ACO": {
+    "alfa": 5,
+    "beta": 5,
+    "rho": 0.9
+  }
+}
